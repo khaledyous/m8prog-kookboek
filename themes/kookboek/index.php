@@ -1,11 +1,16 @@
 <?php get_header(); ?>
 
 <main class="container my-5">
-    <h1 class="mt-5">Dit is mijn eerste titel</h1>
-    <div class="col-lg-8 px-0">
-        <p class="fs-5">Intro</p>
-        <p>Content</p>
-    </div>
+    <?php if ( have_posts() ) : ?>
+        <?php while ( have_posts() ) : the_post(); ?>
+            <article class="mb-5">
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <div><?php the_excerpt(); ?></div>
+            </article>
+        <?php endwhile; ?>
+    <?php else : ?>
+        <p>Volgens mij zoek je iets dat er niet is.</p>
+    <?php endif; ?>
 </main>
 
 <?php get_footer(); ?>

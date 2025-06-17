@@ -1,6 +1,12 @@
 <footer class="footer mt-auto py-3 bg-body-tertiary">
     <div class="container">
-        <span class="text-body-secondary">Place footer content here.</span>
+        <?php if ( is_active_sidebar( 'footer-widget-area' ) ) : ?>
+            <div class="row">
+                <?php dynamic_sidebar( 'footer-widget-area' ); ?>
+            </div>
+        <?php else : ?>
+            <span class="text-body-secondary">Voeg een widget toe via Weergave > Widgets.</span>
+        <?php endif; ?>
     </div>
 </footer>
 
