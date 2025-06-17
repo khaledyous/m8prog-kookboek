@@ -1,4 +1,6 @@
+
 <?php
+require_once get_template_directory() . '/M8progCustom/PostType.php';
 // Menu locaties registreren
 function register_my_menus() {
     register_nav_menus([
@@ -42,3 +44,6 @@ function add_additional_class_on_a($attributes, $item, $args) {
     return $attributes;
 }
 add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
+
+
+
