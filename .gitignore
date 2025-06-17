@@ -15,6 +15,6 @@ vendor/
 .vscode/
 
 # Docker bind mounts (optioneel, alleen als je ze niet in Git wil)
-themes/
-plugins/
+
+
 uploads/

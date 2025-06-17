@@ -1,0 +1,54 @@
+/**
+ * Theme Name:        kookboek
+ * Theme URI:         https://jouwdomein.nl
+ * Description:       Dit is mijn eigen WordPress-thema voor M8PROG.
+ * Version:           6.8.1
+ * Author:            khaled
+ * Author URI:        https://jouwdomein.nl
+ * Tags:              m8prog
+ * Text Domain:       kookboek
+ * Domain Path:       /languages
+ * Tested up to:      6.5
+ * Requires at least: 6.4
+ * Requires PHP:      8.2
+ * License:           GNU General Public License v2.0 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+
+ /* style.css - eigen stijlen */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h5 {
+    color: #343a40;
+}
+
+main {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 2rem 0;
+}
+
+footer span {
+    color: #ccc;
+}
