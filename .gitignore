@@ -1,0 +1,20 @@
+# Environment files
+.env
+
+# Dependency directories
+node_modules/
+vendor/
+
+# macOS
+.DS_Store
+
+# PHPStorm / WebStorm / IntelliJ
+.idea/
+
+# VS Code
+.vscode/
+
+# Docker bind mounts (optioneel, alleen als je ze niet in Git wil)
+themes/
+plugins/
+uploads/
